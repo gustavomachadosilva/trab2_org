@@ -80,6 +80,8 @@ do arquivo e alocação de memória, e m5.stats.dump().
 #include <stdlib.h>
 
 #define MAX_VERTICES 100000
+#define PROG_NAME "/.bfs"
+#define INPUT_FILE "grafo.txt"
 
 typedef struct Node {
     int vertex;
@@ -211,11 +213,11 @@ int main(int argc, char *argv[]) {
 
     if (argc < 2) {
 
-        printf("Uso: %s <arquivo_grafo>\n", argv[0]);
+        printf("Uso: %s <arquivo_grafo>\n", PROG_NAME);
         return 1;
     }
 
-    FILE* file = fopen(argv[1], "r");
+    FILE* file = fopen(INPUT_FILE, "r");
 
     if (file == NULL) {
 

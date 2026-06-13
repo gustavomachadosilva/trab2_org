@@ -83,6 +83,8 @@ do arquivo e alocação de memória, e m5.stats.dump().
 #include <stdlib.h>
 
 #define MAX_SIZE 1024
+#define PROG_NAME "/.convolucao"
+#define INPUT_FILE "matriz.txt"
 
 /* Kernel 3x3 */
 int kernel[3][3] = {
@@ -119,11 +121,11 @@ int main(int argc, char *argv[]) {
 
     if (argc < 2) {
 
-        printf("Uso: %s <arquivo_entrada>\n", argv[0]);
+        printf("Uso: %s <arquivo_entrada>\n", PROG_NAME);
         return 1;
     }
 
-    FILE* file = fopen(argv[1], "r");
+    FILE* file = fopen(INPUT_FILE, "r");
 
     if (file == NULL) {
 
