@@ -79,7 +79,7 @@ do arquivo e alocação de memória, e m5.stats.dump().
 
 #define MAX_SIZE 100000
 #define PROG_NAME "/.mergesort"
-#define INPUT_FILE "array.txt"
+#define INPUT_FILE "array_50000.txt"
 
 /* Função de merge */
 void merge(int arr[], int left, int mid, int right) {

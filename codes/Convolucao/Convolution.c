@@ -84,7 +84,7 @@ do arquivo e alocação de memória, e m5.stats.dump().
 
 #define MAX_SIZE 1024
 #define PROG_NAME "/.convolucao"
-#define INPUT_FILE "matriz.txt"
+#define INPUT_FILE "matriz_512.txt"
 
 /* Kernel 3x3 */
 int kernel[3][3] = {
