@@ -81,7 +81,7 @@ do arquivo e alocação de memória, e m5.stats.dump().
 
 #define MAX_VERTICES 100000
 #define PROG_NAME "/.bfs"
-#define INPUT_FILE "grafo.txt"
+#define INPUT_FILE "grafo_20000.txt"
 
 typedef struct Node {
     int vertex;
