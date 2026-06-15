@@ -165,7 +165,7 @@ class MyO3CPU(DerivO3CPU):
     LQEntries        =  20 # Number of load queue entries
     SQEntries        =  12 # Number of store queue entries
 
-    numPhysIntRegs   =  96 # Number of physical integer registers
+    numPhysIntRegs   =  160 # Number of physical integer registers
     numPhysFloatRegs =  96 # Number of physical floating point registers
 
     numRobs          =  1 # Number of Reorder Buffers;
