@@ -22,12 +22,18 @@ def main():
         'system.cpu.branchPred.condIncorrect': []
     }
 
+    data_2 = {
+        'File': [],
+        'sim_seconds': [],
+        'system.cpu.ipc': [],
+    }
+
     for file_path in folder.glob('*.txt'):
         if file_path.is_file():
             print(f"Reading file: {file_path.name}")
-            find_statistics(file_path, data)
+            find_statistics(file_path, data_2)
     
-    create_excel(data)
+    create_excel(data_2)
             
             
 def find_statistics(file_path, data):
