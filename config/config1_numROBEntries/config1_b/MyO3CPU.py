@@ -131,7 +131,7 @@ class MyO3CPU(DerivO3CPU):
 ## Pode ser usado para simular pipelines mais profundos.
 ############################################################
     #### Latências de avanço
-    fetchToDecodeDelay   = 4 # Fetch to decode delay
+    fetchToDecodeDelay   = 3 # Fetch to decode delay
     decodeToRenameDelay  = 2 # Decode to rename delay
     renameToIEWDelay     = 2 # Rename to Issue/Execute/Writeback delay
     renameToROBDelay     = 2 # Rename to reorder buffer delay
@@ -160,8 +160,8 @@ class MyO3CPU(DerivO3CPU):
 
     fetchBufferSize  =  64 # Fetch buffer size in bytes
     fetchQueueSize   =  32 # Fetch queue size in micro-ops per thread
-    numIQEntries     =  48 # Number of instruction queue entries
-    numROBEntries    =  128 # Number of reorder buffer entries
+    numIQEntries     =  32 # Number of instruction queue entries
+    numROBEntries    =  60 # Number of reorder buffer entries
     LQEntries        =  20 # Number of load queue entries
     SQEntries        =  12 # Number of store queue entries
 
@@ -182,7 +182,7 @@ class MyO3CPU(DerivO3CPU):
     issueWidth    =  4 # Issue width
     wbWidth       =  4 # Writeback width
     commitWidth   =  4 # Commit width
-    squashWidth   = 16 # Squash width
+    squashWidth   = 32 # Squash width
 
     fuPool        = MyFUPool() # Functional Unit pool
 
